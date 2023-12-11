@@ -1,0 +1,21 @@
+#See https://github.com/zricethezav/gitleaks#configuration
+
+title = "Foundry Template"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "ethereum-rule-1"
+description = "Ethereum private keys"
+regex = '''(?:\'|"|\s|^)(?:0x)?[a-fA-F0-9]{64}(?:\'|"|\s|;|$)'''
+
+
+[allowlist]
+paths = [
+    '''lib/(.*?)''',
+    '''out/(.*?)''',
+    '''cache/(.*?)''',
+    '''artifacts/(.*?)''',
+    '''node_modules/(.*?)''',
+]

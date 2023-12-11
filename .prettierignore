@@ -1,0 +1,6 @@
+**/cache
+**/lib
+**/out
+**/node_modules
+*.env
+*.sol

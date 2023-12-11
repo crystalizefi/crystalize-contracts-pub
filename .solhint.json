@@ -1,0 +1,12 @@
+{
+	"extends": "solhint:recommended",
+	"rules": {
+		"max-line-length": ["error", 125],
+		"compiler-version": ["error", "^0.8.7"],
+		"no-empty-blocks": "off",
+		"func-visibility": ["warn", { "ignoreConstructors": true }],
+		"private-vars-leading-underscore": "off",
+		"not-rely-on-time": "off",
+		"immutable-vars-naming": "off"
+	}
+}
